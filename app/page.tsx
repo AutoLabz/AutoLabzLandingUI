@@ -8,6 +8,7 @@ import { CheckCheck, LucideIcon } from 'lucide-react'
 import { ReactElement } from 'react'
 import pricingCards from './libs/PricingCards'
 
+
 export default function Home() {
   return (
     <main className='flex min-h-screen h-fit flex-col items-center justify-center relative'>
@@ -21,7 +22,10 @@ export default function Home() {
           <p className='max-w-md text-sm md:text-base text-zinc-500'>AutoLabz is an AI-powered car search engine tool that provides data-driven insights to find your dream car.</p>
           <div className='w-full flex items-center justify-center md:justify-start gap-4'>
           <button className='w-48 h-12 text-sm sm:text-base rounded bg-white text-black hover:bg-[#0033CC] hover:text-white transition-colors'>Find a car!</button>            
-          <button className='w-48 h-12 text-sm sm:text-base rounded hover:bg-white hover:text-white hover:bg-opacity-5 transition-colors'>Contact</button>
+          <span className='w-48 h-12 text-sm sm:text-base rounded hover:bg-white hover:text-white hover:bg-opacity-5 transition-colors flex items-center justify-center'>
+            <a rel="noopener noreferrer" target="_blank" href="https://airtable.com/appp8uGD4nwkYR88V/shrAS5KXDf7rXDbui">Contact</a>
+          </span>
+       
           </div>
         </div>
 
@@ -130,10 +134,9 @@ function Navbar() {
         <ul className='flex gap-8'>
           <li><Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#home">Home</Link></li>
           <li><Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#about">About</Link></li>
-          <li><Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#contact">Contact</Link></li>
+          <li><a className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' rel="noopener noreferrer" target="_blank" href="https://airtable.com/appp8uGD4nwkYR88V/shrAS5KXDf7rXDbui">Contact</a></li>
         </ul>
       </div>
-
     </div>
   )
 }
