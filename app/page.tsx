@@ -16,11 +16,11 @@ export default function Home() {
         <div className='w-full h-2/4 md:h-full md:w-2/5 flex flex-col justify-center items-center md:items-start gap-8'>
           <div className='flex flex-col gap-2'>
           <h1 className='text-4xl font-black md:text-8xl'>AutoLab<span style={{ color: '#0033CC' }}>z</span></h1>
-            <h2 className='text-md md:text-2xl'>Start growing today!</h2>
+            <h2 className='text-md md:text-2xl'>Find your dream car!</h2>
           </div>
           <p className='max-w-md text-sm md:text-base text-zinc-500'>AutoLabz is an AI-powered car search engine tool that provides data-driven insights to find your dream car.</p>
           <div className='w-full flex items-center justify-center md:justify-start gap-4'>
-          <button className='w-48 h-12 text-sm sm:text-base rounded bg-white text-black hover:bg-[#0033CC] hover:text-white transition-colors'>Find your dream car!</button>            
+          <button className='w-48 h-12 text-sm sm:text-base rounded bg-white text-black hover:bg-[#0033CC] hover:text-white transition-colors'>Find a car!</button>            
           <button className='w-48 h-12 text-sm sm:text-base rounded hover:bg-white hover:text-white hover:bg-opacity-5 transition-colors'>Contact</button>
           </div>
         </div>
@@ -36,7 +36,7 @@ export default function Home() {
           <Image src="/whirl.svg" fill className="absolute object-cover w-full overflow-visible sm:rotate-90" alt="Background Whirl"/>
         </div>
         <div className="w-full h-full flex items-center justify-center flex-col gap-8 max-w-7xl">
-          <h3 className='text-4xl md:text-5xl font-bold'>LLM powered search</h3>
+          <h3 className='text-4xl md:text-5xl font-bold'>LLM powered Car Search</h3>
           <div className="w-full grid grid-cols-1 grid-rows-3 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-1 gap-4 justify-between relative">
             {infoCards.map((infoCard) => {
               return (
@@ -48,10 +48,24 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Footer/>
 
     </main>
   )
 }
+
+const Footer = () => {
+  return (
+    <footer className="footer z-10 border-t-[#33353F] border-b-transparent border-l-transparent border-r-transparent text-white">
+      <div className="p-12 flex items-center ">
+        <p className="text-slate-600 ml-auto">
+          © 2024 AutoLabz. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  );
+};
+
 
 interface IInfoCardProps {
   title:string;
