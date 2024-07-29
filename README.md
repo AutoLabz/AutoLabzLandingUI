@@ -1,1 +1,1 @@
-AutoLabz front end service. 
+AutoLabz landing page front end service. 
