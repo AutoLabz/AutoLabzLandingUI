@@ -7,12 +7,14 @@ import infoCards from './libs/InfoCards'
 import { CheckCheck, LucideIcon } from 'lucide-react'
 import { ReactElement } from 'react'
 import pricingCards from './libs/PricingCards'
-
+import { Footer } from "./components/Footer";
+import { Faq } from "./components/Faq";
+import { NavBar } from './components/NavBar'
 
 export default function Home() {
   return (
     <main className='flex min-h-screen h-fit flex-col items-center justify-center relative'>
-      <Navbar />
+      <NavBar />
       <header id="home" className="flex flex-col-reverse md:flex-row w-full h-screen max-w-7xl items-center justify-center p-8 relative overflow-x-hidden">
         <div className='w-full h-2/4 md:h-full md:w-2/5 flex flex-col justify-center items-center md:items-start gap-8'>
           <div className='flex flex-col gap-2'>
@@ -52,23 +54,13 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      <Faq/>
       <Footer/>
 
     </main>
   )
 }
-
-const Footer = () => {
-  return (
-    <footer className="footer z-10 border-t-[#33353F] border-b-transparent border-l-transparent border-r-transparent text-white">
-      <div className="p-12 flex items-center ">
-        <p className="text-slate-600 ml-auto">
-          © 2024 AutoLabz. All rights reserved.
-        </p>
-      </div>
-    </footer>
-  );
-};
 
 
 interface IInfoCardProps {
@@ -121,21 +113,6 @@ function PricingCard({title,price,benefits,oneliner}:IPricingCardProps) {
             </p>
           )
         })}
-      </div>
-    </div>
-  )
-}
-
-function Navbar() {
-  return (
-    <div className='w-full h-16 backdrop-filter backdrop-blur-xl bg-opacity-20 border-b flex items-center justify-center'>
-      <div className='max-w-7xl w-full flex items-center justify-between p-4'>
-        <h6 className='font-bold'>AutoLabz</h6>
-        <ul className='flex gap-8'>
-          <li><Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#home">Home</Link></li>
-          <li><Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#about">About</Link></li>
-          <li><a className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' rel="noopener noreferrer" target="_blank" href="https://airtable.com/appp8uGD4nwkYR88V/shrAS5KXDf7rXDbui">Contact</a></li>
-        </ul>
       </div>
     </div>
   )
