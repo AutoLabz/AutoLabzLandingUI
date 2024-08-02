@@ -10,6 +10,8 @@ export function NavBar() {
                 <li><Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#home">Home</Link></li>
                 <li><Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#about">About</Link></li>
                 <li><a className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' rel="noopener noreferrer" target="_blank" href="https://airtable.com/appp8uGD4nwkYR88V/shrAS5KXDf7rXDbui">Contact</a></li>
+                <li><Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#login">Sign Up</Link></li>
+                <li><Link className='hover:text-fuchsia-500 transition-colors text-xs sm:text-base' href="#signup">Login</Link></li>
                 </ul>
             </div>
         </div>

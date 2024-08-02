@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const items = [
   {
-    question: "How does AutoLabz use LLM to search for cars?",
+    question: "How does AutoLabz use LLMs to search for cars?",
     answer:
       "AutoLabz leverages large language models (LLM) to understand natural language queries and provide accurate car search results by analyzing and interpreting user inputs efficiently. For example, you can search 'Find me a red 2020 Tesla Model 3' and AutoLabz will return relevant results.",
   },
