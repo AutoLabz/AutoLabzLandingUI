@@ -36,11 +36,11 @@ export async function updateSession(request: NextRequest) {
       !user &&
       !request.nextUrl.pathname.startsWith('/login') &&
       !request.nextUrl.pathname.startsWith('/auth') &&
-      request.nextUrl.pathname !== '/'
+      request.nextUrl.pathname !== '/' // this is to force non automatic redirect
     ) {
       const url = request.nextUrl.clone()
       url.pathname = '/login'
-      //return NextResponse.redirect(url) // UNCOMMENT this line to start full auth process. Commented for UI testing.
+      return NextResponse.redirect(url) // UNCOMMENT this line to start full auth process. Commented for UI testing.
     }
   } catch (error) {
     console.error('Error in updateSession:', error)
