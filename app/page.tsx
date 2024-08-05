@@ -10,6 +10,9 @@ import pricingCards from './libs/PricingCards'
 import { Footer } from "./components/Footer";
 import { Faq } from "./components/Faq";
 import { NavBar } from './components/NavBar'
+import FollowUsSection from './FollowUsSection'; // Adjust the path as necessary
+import { Socials } from './components/Socials'
+
 
 export default function Home() {
   return (
@@ -56,6 +59,7 @@ export default function Home() {
       </section>
       
       <Faq/>
+      <Socials/>
       <Footer/>
 
     </main>
