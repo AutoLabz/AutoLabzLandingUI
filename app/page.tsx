@@ -59,7 +59,6 @@ export default function Home() {
 
 
       <Faq />
-      <Paragraph value = {paragraph}/>
       <Socials />
       <Footer />
     </main>
