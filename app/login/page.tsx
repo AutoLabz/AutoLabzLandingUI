@@ -51,6 +51,7 @@ export default function LoginPage() {
               Log in
             </button>
           </div>
+
           <p className="mt-8 text-xs font-light text-center text-gray-400">
             Don&apos;t have an account?{" "}
             <button
@@ -61,6 +62,8 @@ export default function LoginPage() {
               Sign up
             </button>
           </p>
+        </form>
+
         </form>
       </div>
     </div>
