@@ -4,6 +4,7 @@ import * as Accordion from "@radix-ui/react-accordion";
 import Plus from "/public/plus.svg";
 import Image from "next/image";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const items = [
   {
@@ -32,6 +33,11 @@ const items = [
       "AutoLabz is optimized for fast performance and typically provides search results within seconds, thanks to its efficient algorithms and optimized backend infrastructure. Our modern and easy-to-use UI ensures a smooth and responsive user experience.",
   },
 ];
+
+const variants = {
+  open: { opacity: 1, height: "auto" },
+  collapsed: { opacity: 0, height: 0 },
+};
 
 export function Faq() {
   const [openItems, setOpenItems] = useState<string[]>([]);
@@ -89,9 +95,21 @@ export function Faq() {
                     </Accordion.Trigger>
                   </Accordion.Header>
 
-                  <Accordion.Content>
-                    <p className="pt-2 text-[#CCCCCC]">{item.answer}</p>
-                  </Accordion.Content>
+                  <AnimatePresence initial={false}>
+                    {openItems.includes(`item-${index + 1}`) && (
+                      <motion.div
+                        initial="collapsed"
+                        animate="open"
+                        exit="collapsed"
+                        variants={variants}
+                        transition={{ duration: 0.5, ease: "easeInOut" }}
+                      >
+                        <Accordion.Content>
+                          <p className="pt-2 text-[#CCCCCC]">{item.answer}</p>
+                        </Accordion.Content>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </Accordion.Item>
               </div>
             ))}
