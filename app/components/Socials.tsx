@@ -1,19 +1,18 @@
-// components/Socials.js
 import React from 'react';
 
 export function Socials() {
   return (
-    <section id="socials" className="h-fit min-h-screen w-full flex relative items-center justify-center p-8">
-      <div className="w-full h-full flex items-center justify-center flex-col gap-8 max-w-7xl">
-        <h3 className='text-4xl md:text-5xl font-bold text-white'>Stay <span style={{ color: '#0033CC' }}>Connected</span> with Us</h3>
-        <div className="w-full max-w-3xl p-8 rounded-md shadow-xl bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-10 flex flex-col items-center justify-center" style={{ borderImage: 'linear-gradient(to right, #0033CC, #EB2891) 1' }}>
-          <h2 className="text-2xl text-align-center text-center mb-6 font-medium text-white">
+    <section id="socials" className="h-fit min-h-screen w-full flex relative items-center justify-center p-4 md:p-8">
+      <div className="w-full h-full flex items-center justify-center flex-col gap-6 md:gap-8 max-w-7xl">
+        <h3 className='text-3xl md:text-5xl font-bold text-white text-center'>Stay <span style={{ color: '#0033CC' }}>Connected</span> with Us</h3>
+        <div className="w-full max-w-lg md:max-w-3xl p-6 md:p-8 rounded-md shadow-xl bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-10 flex flex-col items-center justify-center" style={{ borderImage: 'linear-gradient(to right, #0033CC, #EB2891) 1' }}>
+          <h2 className="text-xl md:text-2xl text-center mb-4 md:mb-6 font-medium text-white">
             Follow us for the latest updates <br />(we’re just getting started)
           </h2>
           <div className="flex justify-center items-center">
             <a
               href="https://x.com/Autolabsz"
-              className="p-4 bg-black rounded-full text-white hover:bg-gray-600 transition-colors duration-300"
+              className="p-3 md:p-4 bg-black rounded-full text-white hover:bg-gray-600 transition-colors duration-300"
               target="_blank"
               rel="noopener noreferrer"
             >
