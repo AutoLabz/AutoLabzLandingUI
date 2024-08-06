@@ -1,9 +1,13 @@
-// pages/login.js
 import React from 'react';
 import 'tailwindcss/tailwind.css';
 import { login, signup } from './actions';
 
 export default function LoginPage() {
+  const handleSignup = (e) => {
+    e.preventDefault();
+    signup();
+  };
+
   return (
     <div className="relative flex flex-col justify-center min-h-screen overflow-hidden bg-black">
       <div className="w-full p-6 m-auto bg-gray-800 bg-opacity-60 rounded-md shadow-xl lg:max-w-xl" style={{ borderImage: 'linear-gradient(to right, #0033CC, #EB2891) 1' }}>
@@ -52,20 +56,11 @@ export default function LoginPage() {
               Log in
             </button>
           </div>
-          <div className="mt-6">
-            <button
-              type="submit"
-              formAction={signup}
-              className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform rounded-md bg-gradient-to-r from-[#EB2891] to-[#0033CC] focus:outline-none"
-            >
-              Sign up
-            </button>
-          </div>
         </form>
         <p className="mt-8 text-xs font-light text-center text-gray-400">
           Don&apos;t have an account?{" "}
           <a
-            href="/register"
+            href="/signup"
             className="font-medium text-[#EB2891] hover:underline"
           >
             Sign up
