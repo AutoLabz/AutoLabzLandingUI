@@ -27,7 +27,8 @@ export default function Home() {
           <div className='w-full flex items-center justify-center md:justify-start gap-4'>
           <button className='w-48 h-12 text-sm sm:text-base rounded bg-white text-black hover:bg-[#0033CC] hover:text-white transition-colors'>Find a car!</button>            
           <span className='w-48 h-12 text-sm sm:text-base rounded hover:bg-white hover:text-white hover:bg-opacity-5 transition-colors flex items-center justify-center'>
-            <a href="/signup">Sign Up</a>
+
+            <a className='transition-colors text-xs sm:text-base' rel="noopener noreferrer" target="_blank" href="https://airtable.com/appp8uGD4nwkYR88V/shrAS5KXDf7rXDbui">Contact</a>
           </span>
        
           </div>

@@ -1,4 +1,3 @@
-// pages/login.js
 import React from 'react';
 import 'tailwindcss/tailwind.css';
 import { login, signup } from './actions';
@@ -52,19 +51,17 @@ export default function LoginPage() {
               Log in
             </button>
           </div>
-          
+          <p className="mt-8 text-xs font-light text-center text-gray-400">
+            Don&apos;t have an account?{" "}
+            <button
+              type="submit"
+              formAction={signup}
+              className="font-medium text-[#EB2891] hover:underline bg-transparent border-none p-0"
+            >
+              Sign up
+            </button>
+          </p>
         </form>
-        <div className="mt-8 text-center text-sm text-gray-400">
-          Don&apos;t have an account?{" "}
-          <button
-            type="submit"
-            form="login-form"
-            formAction={signup}
-            className="underline text-[#EB2891]"
-          >
-            Sign up
-          </button>
-        </div>
       </div>
     </div>
   );
