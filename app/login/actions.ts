@@ -37,12 +37,12 @@ export async function signup(formData: FormData) {
     email: formData.get('email') as string,
     password: formData.get('password') as string,
   }
-
+  console.log("trying to run the mf singupcode")
   const { error } = await supabase.auth.signUp(data)
 
   if (error) {
-    console.log("error when trying to sign up banda - taking you back to /login")
-    redirect('/login?message=Error Signing Up')
+    console.log("error when trying to sign up!!!")
+    redirect('/login?message=Error Signing Up New User')
   }
 
   revalidatePath('/', 'layout')
