@@ -52,25 +52,19 @@ export default function LoginPage() {
               Log in
             </button>
           </div>
-          <div className="mt-6">
-            <button
-              type="submit"
-              formAction={signup}
-              className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform rounded-md bg-gradient-to-r from-[#EB2891] to-[#0033CC] focus:outline-none"
-            >
-              Sign up
-            </button>
-          </div>
+          
         </form>
-        <p className="mt-8 text-xs font-light text-center text-gray-400">
+        <div className="mt-8 text-center text-sm text-gray-400">
           Don&apos;t have an account?{" "}
-          <a
-            href="/register"
-            className="font-medium text-[#EB2891] hover:underline"
+          <button
+            type="submit"
+            form="login-form"
+            formAction={signup}
+            className="underline text-[#EB2891]"
           >
             Sign up
-          </a>
-        </p>
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -15,14 +15,17 @@ export async function login(formData: FormData) {
     password: formData.get('password') as string,
   }
 
+  console.log("tried running login function")
+
   const { error } = await supabase.auth.signInWithPassword(data)
 
   if (error) {
-    redirect('/error')
+    console.log("error here!")
+    redirect('/login?message=Could not authenticate user')
   }
 
   revalidatePath('/', 'layout')
-  redirect('/')
+  redirect('/searchui')
 }
 
 export async function signup(formData: FormData) {
@@ -34,13 +37,14 @@ export async function signup(formData: FormData) {
     email: formData.get('email') as string,
     password: formData.get('password') as string,
   }
-
+  console.log("trying to run the mf singupcode")
   const { error } = await supabase.auth.signUp(data)
 
   if (error) {
-    redirect('/error')
+    console.log("error when trying to sign up!!!")
+    redirect('/login?message=Error Signing Up New User')
   }
 
   revalidatePath('/', 'layout')
-  redirect('/')
+  redirect('/login')
 }
