@@ -3,11 +3,6 @@ import 'tailwindcss/tailwind.css';
 import { login, signup } from './actions';
 
 export default function LoginPage() {
-  const handleSignup = (e) => {
-    e.preventDefault();
-    signup();
-  };
-
   return (
     <div className="relative flex flex-col justify-center min-h-screen overflow-hidden bg-black">
       <div className="w-full p-6 m-auto bg-gray-800 bg-opacity-60 rounded-md shadow-xl lg:max-w-xl" style={{ borderImage: 'linear-gradient(to right, #0033CC, #EB2891) 1' }}>
