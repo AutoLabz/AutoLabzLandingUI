@@ -51,16 +51,17 @@ export default function LoginPage() {
               Log in
             </button>
           </div>
+          <p className="mt-8 text-xs font-light text-center text-gray-400">
+            Don&apos;t have an account?{" "}
+            <button
+              type="submit"
+              formAction={signup}
+              className="font-medium text-[#EB2891] hover:underline bg-transparent border-none p-0"
+            >
+              Sign up
+            </button>
+          </p>
         </form>
-        <p className="mt-8 text-xs font-light text-center text-gray-400">
-          Don&apos;t have an account?{" "}
-          <a
-            href="/signup"
-            className="font-medium text-[#EB2891] hover:underline"
-          >
-            Sign up
-          </a>
-        </p>
       </div>
     </div>
   );
