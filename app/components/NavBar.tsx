@@ -9,7 +9,7 @@ export function NavBar() {
                 <ul className='flex gap-8'>
                 <li><Link className='transition-colors text-xs sm:text-base' href="#home">Home</Link></li>
                 <li><Link className='transition-colors text-xs sm:text-base' href="#about">About</Link></li>
-                <li><a className='transition-colors text-xs sm:text-base' rel="noopener noreferrer" target="_blank" href="https://airtable.com/appp8uGD4nwkYR88V/shrAS5KXDf7rXDbui">Contact</a></li>
+                <li><a className='transition-colors text-xs sm:text-base' rel="noopener noreferrer" target="_blank" href="https://calendly.com/saurabhkhanal/morning-chat">Contact</a></li>
                 <li><Link className='transition-colors text-xs sm:text-base' href="/login">Login</Link></li>
                 </ul>
             </div>
