@@ -39,7 +39,7 @@ export default function Home() {
               Find a car!
             </span>
           </Link>            <span className='w-48 h-12 text-sm sm:text-base rounded hover:bg-white hover:text-white hover:bg-opacity-5 transition-colors flex items-center justify-center'>
-              <a className='transition-colors text-xs sm:text-base' rel="noopener noreferrer" target="_blank" href="https://airtable.com/appp8uGD4nwkYR88V/shrAS5KXDf7rXDbui">Contact</a>
+              <a className='transition-colors text-xs sm:text-base' rel="noopener noreferrer" target="_blank" href="https://calendly.com/saurabhkhanal/morning-chat">Contact</a>
             </span>
           </div>
         </div>
