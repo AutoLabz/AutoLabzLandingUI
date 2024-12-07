@@ -40,7 +40,7 @@ export async function updateSession(request: NextRequest) {
     ) {
       const url = request.nextUrl.clone()
       url.pathname = '/login'
-      return NextResponse.redirect(url) // UNCOMMENT this line to start full auth process. Commented for UI testing.
+      //return NextResponse.redirect(url) // UNCOMMENT this line to start full auth process. Commented for UI testing.
     }
   } catch (error) {
     console.error('Error in updateSession:', error)
