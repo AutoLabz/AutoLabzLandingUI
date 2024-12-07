@@ -21,6 +21,7 @@ export default function RootLayout({
       <head>
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <GoogleAnalytics gaId="G-GKP5HR0WP9" />
+      <script async src="https://cdn.seline.so/seline.js" data-token="0e326d305c34486"></script>
 
         </head>
       <body className={inter.className}>{children}</body>
